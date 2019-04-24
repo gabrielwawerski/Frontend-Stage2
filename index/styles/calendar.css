@@ -1,0 +1,49 @@
+#calendar-body {
+    height: 100%;
+    width: 100%;
+}
+
+.calendar-table td {
+    /*padding: 1vh;*/
+}
+
+.calendar-table {
+    text-align: center;
+    /*width: 100%;*/
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vh;
+    text-align: center;
+    /*margin: 2vh 1vw 0.5vh;*/
+    cursor: default;
+    /*height: 100%;*/
+}
+
+.calendar-header-nav {
+    padding: 1vh 0;
+}
+
+#calendar-body td:hover {
+    cursor: default;
+    margin: 4vh;
+    background-color: #818181;
+}
+
+#calendar {
+}
+
+.calendar-header-button {
+    /*padding: 0 1vh;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.calendar-header-content {
+}

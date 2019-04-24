@@ -6,18 +6,44 @@
 
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+   <link href="styles/grid.css" rel="stylesheet" type="text/css">
+   <link href="styles/calendar.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="wrapper">
-   <div class="header">HEADER</div>
-   <div class="menu">MENU</div>
+<div class="grid">
+   <header class="header">HEADER</header>
+   <div class="navbar">NAVBAR</div>
+   <div class="content">CONTENT</div>
+   <div class="calendar">
+      <div class="calendar-header" id="calendar-header">
+                        <span class="calendar-header-nav"><button class="calendar-header-button"
+                                                                  id="calendar-header-button-left"><</button></span>
+         <div class="calendar-header-content">
+            <span id="calendar-header-month">Kwiecień</span>
+            <span id="calendar-header-year">2019</span>
+         </div>
+         <span class="calendar-header-nav"><button class="calendar-header-button"
+                                                   id="calendar-header-button-right">></button></span>
+      </div>
+      <table class="calendar-table">
+         <thead>
+         <tr>
+            <th>PON</th>
+            <th>WT</th>
+            <th>ŚRO</th>
+            <th>CZW</th>
+            <th>PIĄ</th>
+            <th>SOB</th>
+            <th>NIE</th>
+         </tr>
+         </thead>
 
-<!-- TODO redesign - use multiple flex boxes? -->
-   <div class="content">
-      <div class="shelve">SHELVE</div>
-      <div class="calendar">CALENDAR</div>
+         <tbody id="calendar-body">
+         </tbody>
+      </table>
    </div>
+   <div class="cards">CARDS</div>
    <div class="footer">FOOTER</div>
 </div>
 
