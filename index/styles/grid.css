@@ -2,19 +2,22 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    grid-gap: 1em 1em;
+    grid-gap: 0 0.5em;
 }
 
 .header {
     grid-area: 1 / 1 / 2 / 5;
+    height: 100px;
 }
 
 .navbar {
     grid-area: 2 / 1 / 4 / 2;
+    width: 150px;
 }
 
 .footer {
     grid-area: 4 / 1 / 5 / 5;
+    height: 80px;
 }
 
 .content {
@@ -23,9 +26,19 @@
 
 .calendar {
     grid-area: 2 / 4 / 3 / 5;
-    align-content: space-between;
 }
 
 .cards {
     grid-area: 3 / 2 / 4 / 5;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
 }
