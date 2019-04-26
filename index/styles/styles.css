@@ -25,15 +25,32 @@ div {
     background-color: #3a3c3c;
 }
 
-.content {
+.main {
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 
+.content-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.content {
+    order: 1;
+}
+
 .calendar {
+    order: 2;
     color: white;
 }
 
 .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
 }
 
@@ -41,3 +58,4 @@ div {
     color: dimgrey;
     background-color: #242424;
 }
+
